@@ -17,14 +17,14 @@ export default defineConfig(async ({ mode }) => {
     plugins,
     resolve: {
       alias: {
-        "@": path.resolve(__dirname, "client", "src"),
-        "@shared": path.resolve(__dirname, "shared"),
-        "@assets": path.resolve(__dirname, "attached_assets"),
+        "@": path.resolve(__dirname, "src"),
+        "@shared": path.resolve(__dirname, "../shared"),
+        "@assets": path.resolve(__dirname, "../attached_assets"),
       },
     },
     root: ".",
     build: {
-      outDir: path.resolve(__dirname, "client", "dist"),
+      outDir: "dist",
       emptyOutDir: true,
     },
     server: {
