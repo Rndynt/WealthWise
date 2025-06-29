@@ -14,7 +14,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: "../public", // ⬅️ hasil build ke root/public biar Express bisa serve
+    outDir: path.resolve(__dirname, "..", "public"), // ⬅️ hasil build ke root/public biar Express bisa serve
     emptyOutDir: true,
   },
 });
