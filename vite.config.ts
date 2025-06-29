@@ -7,7 +7,7 @@ export default defineConfig({
   base: "/", // atau bisa '/WealthWise/' jika pakai GitHub Pages
   plugins: [react()],
   build: {
-    outDir: path.resolve(__dirname, "client/dist"),
+    outDir: path.resolve(__dirname, "client", "dist"),
     emptyOutDir: true,
   },
   resolve: {
