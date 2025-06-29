@@ -1,0 +1,8 @@
+{
+  "build": {
+    "command": "npm install && npm run build:full"
+  },
+  "start": {
+    "command": "npm run start"
+  }
+}
